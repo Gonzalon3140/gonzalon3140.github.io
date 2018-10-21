@@ -11,9 +11,9 @@ html {
   font-size: 1rem;
 }
 
-
 .header {
   height: 100px;
+
   border: 1px solid black;
   text-align: center;
 }
@@ -39,8 +39,6 @@ html {
   font-size: 15px;
 }
 
-
-
 /* this is the main bio  */
 
 #parent {
@@ -48,7 +46,7 @@ html {
   float: left;
   margin: auto;
   padding: 15px;
-  height: 400px;
+  height: 380px;
   margin-top: 60px;
   border-radius: 25px;
   background-color: #cbc7d6;
@@ -61,6 +59,7 @@ html {
   float: left;
   width: 200px;
   height: 160px;
+  margin-top: 10px;
   margin-left: -20px;
   margin-bottom: 20px;
   transform: rotate(90deg);
@@ -68,7 +67,13 @@ html {
 
 #parentTwo {
   padding: 15px;
-  margin-top: 20px;
+  margin-top: 15px;
+}
+
+p {
+  font-weight: bold;
+  font-size: 19px;
+  font-family: "Handlee", cursive;
 }
 
 /* this the porfolio css */
@@ -83,7 +88,8 @@ html {
   text-align: center;
   border: 1px solid black;
   border-radius: 25px;
-  box-shadow: 0 20px 20px rgba(41, 90, 168, 0.486), 0 10px 10px rgba(41, 90, 168, 0.486);
+  box-shadow: 0 20px 20px rgba(41, 90, 168, 0.486),
+    0 10px 10px rgba(41, 90, 168, 0.486);
 }
 
 .projectWrapper {
@@ -112,9 +118,21 @@ html {
   flex-wrap: wrap;
 }
 
+@media (height: 380px) {
+  p {
+    min-height: 380px;
+  }
+}
+/* Minimum height */
+@media (min-height: 20rem) {
+  #parent {
+    min-height: 380px;
+  }
+}
 
-@include media-breakpoint-up(sm) {
-  html {
-    font-size: 1.2rem;
+/* Maximum height */
+@media (max-height: 40rem) {
+  #parent {
+    max-height: 960px;
   }
 }
