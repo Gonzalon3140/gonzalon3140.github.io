@@ -1,3 +1,3 @@
 $(document).ready(function () {
-    $("#test").addClass("animated", "shake");
+  $(".btn btn-info").addClass("animated");
 });
