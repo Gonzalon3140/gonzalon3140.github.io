@@ -4,7 +4,7 @@
 }
 
 body {
-  background-image: url("https://images.template.net/wp-content/uploads/2014/09/Cool-Website-Backgrounds600.jpg");
+  background-image: url("../Images/cool-background.png");
 }
 
 html {
@@ -34,9 +34,15 @@ html {
   justify-content: flex-end;
 }
 
+/* this is for the resume button */
+
 #button {
+  margin-top: 10px;
+  height: 30px;
+  width: 80px;
   background-color: white;
   font-size: 15px;
+  text-align: center;
 }
 
 /* this is the main bio  */
@@ -76,7 +82,19 @@ p {
   font-family: "Handlee", cursive;
 }
 
+/* #footer {
+  height: 35px;
+  position: fixed;
+  bottom: 0;
+  background: slategrey;
+  width: 100%;
+} */
+
 /* this the porfolio css */
+
+.navbarNavDropdown {
+  background-color: rgb(33, 58, 98);
+}
 
 #crystalbox {
   width: 100%;
@@ -118,11 +136,54 @@ p {
   flex-wrap: wrap;
 }
 
+/* portfolio css project 2 */
+
+#crystalbox2 {
+  width: 100%;
+  max-width: 600px;
+  margin-top: 60px;
+  background-color: rgb(169, 194, 198);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0 20px 20px rgba(41, 90, 168, 0.486),
+    0 10px 10px rgba(41, 90, 168, 0.486);
+}
+
+.projectWrapper2 {
+  width: 33.3%;
+  padding: 20px;
+}
+
+.projectTitle {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.projectImage {
+  width: 90%;
+  max-width: 500px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.projectsWrapper2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (height: 380px) {
   p {
     min-height: 380px;
   }
 }
+
 /* Minimum height */
 @media (min-height: 20rem) {
   #parent {
